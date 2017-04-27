@@ -15,6 +15,7 @@
             $this->session->unset_userdata('name');
             //removing session data
             $this->load->view('session_view');
+
         }
     }
 ?>
