@@ -25,8 +25,9 @@
             $this->email->message('Testing the email class.');
 
             //Send mail
-            if($this->email->send()) {
+            if($this->email->send() == true) {
                 $this->session->set_flashdata("email_sent","Email sent successfully.");
+                $this->load->view('email_form');
             }
             else {
                 $this->session->set_flashdata("email_sent","Error in sending Email.");

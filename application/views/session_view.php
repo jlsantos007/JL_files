@@ -7,7 +7,7 @@
     <body>
         Welcome <?php echo $this->session->userdata('name');?>
         <br>
-        <a href="http://localhost/test/index.php/sessionex/unset_session_data">Click Here</a> to unset session data.
+        <a href="<?php echo base_url().'index.php/sessionex/unset';?>">Click Here</a> to unset session data.
     </body>
 
 </html>
